@@ -1,7 +1,6 @@
- # redis
-从零开始学习redis
- ###redis命令:
- ####1、字符串：
+# redis
+### redis命令:
+#### 1、字符串：
 		set key value//设置
 		get key //获取
 		incr key //原子增长(一次增长1)属于原子性
@@ -15,7 +14,7 @@
 		expire key time //设置过期时间
 		或者 set key value ex time
 		ttl key  //检查键的生存剩余时间
- ####2、列表：
+#### 2、列表：
 		Redis 采用链表来实现列表是因为,对于数据库系统来说,快速插入一个元素到一个很长的列表非常重要。另外一个即将描述的优势是,Redis 列表能在常数时间内获得常数长度。
        lpush list value1 ...//从左边 (头部) 添加一个元素到列表
        rpush list value1 .... //.右。。。。。。。。。。。。。。
@@ -26,6 +25,6 @@
        
    
 		
- ###使用原生jdbc连接数据库，采用单例设计模式，数据库采用mysql,使用redis实现数据缓存
+ ### 使用原生jdbc连接数据库，采用单例设计模式，数据库采用mysql,使用redis实现数据缓存
 
 
