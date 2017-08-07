@@ -15,8 +15,10 @@ public class RedisCache {
 		List<User> list = query.query("select * from user");
 		for (User user : list) {
 			System.out.println(user);
-			jedis.rpush( user.getName(),user.getPwd());
+			jedis.mset(user.getName(),user.getPwd());
 			
+			List<String> userPwd = jedis.mget(user.getName());
+			System.out.println(userPwd);
 		}
 		query.close();
 	}
