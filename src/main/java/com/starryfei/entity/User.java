@@ -1,11 +1,15 @@
 package com.starryfei.entity;
-
+/**
+ * 
+ * @author starryfei
+ * User 使用hash
+ */
 public class User {
-	private int id;
+	private String id;
 	private String name;
 	private String pwd;
 	
-	public void setId(int id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 
@@ -25,7 +29,7 @@ public class User {
 		this.pwd = pwd;
 	}
 
-	public int getId() {
+	public String getId() {
 		return id;
 	}
 
